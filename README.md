@@ -19,7 +19,7 @@ The measureFramework-forxquic directory is the measureframework modified by XQUI
 
 The static-build-xquic directory is for statically compiling the xquic client.
 
-## Environment Configuration
+## dependency
 
 All use python3
 
@@ -33,6 +33,10 @@ All use python3
 
 `pip install streamlit`
 
+> if protobuf got err
+
+`pip install protobuf==3.20.1`
+
 ### redis-py & redis
 
 `sudo apt install redis`
@@ -44,6 +48,8 @@ All use python3
 `pip install gym`
 
 ### Install the gym environment of this project in modify mode
+
+`cd rlcc-playground-mininet`
 
 `cd gym-rlcc`
 
@@ -57,7 +63,7 @@ All use python3
 
 `pip install ray==2.1.0`
 
-`pip install -U "ray[rllib]"`
+`pip install ray[rllib]==2.1.0`
 
 # QuickStart
 
@@ -71,7 +77,7 @@ sudo python train_env.py
 2. How to train
    (use rllib)
 ```
-cd train-code/rllib/singe
+cd train-code/rllib/single
 python train.py
 ```
 
